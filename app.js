@@ -14,11 +14,13 @@ axios
     const thisImageHeight=`image-${image.id}`
     html+=`
     <div class='image-item'>
-    <img class='image' src=${image.previewURL} alt=''image/>
+    <img class='image' src=${image.previewURL
+    } alt=''image/>
     </div>
     `
+    
     console.log(image.imageHeight)
-   // thisImageHeight.height=`${image.imageHeight}`
+    //thisImageHeight.style.gridRow = `span ${thisImageHeight.span}`
     imageContainer.innerHTML=html
 
   });
